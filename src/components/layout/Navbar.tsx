@@ -13,8 +13,8 @@ const navItems = [
         path: "#experience"
     },
     {
-        name: "Contact",
-        path: "#contact"
+        name: "Code",
+        path: "#code"
     },
 ]
 
