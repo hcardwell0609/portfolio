@@ -8,6 +8,7 @@ export default function Header() {
             <div className="absolute inset-0 -z-10 backdrop-blur-[2px]" />
             <div className="absolute left-0 top-0 -z-10 h-full w-full bg-[linear-gradient(180deg,rgba(255,255,255,0.05)_0%,transparent_28%,rgba(0,0,0,0.28)_100%)]" />
             <div className="absolute left-[-8rem] top-[35%] -z-10 h-72 w-[34rem] rotate-[-18deg] bg-orange-300/35 blur-3xl" />
+            <div className="absolute bottom-0 left-0 right-0 -z-10 h-52 bg-gradient-to-b from-transparent via-[#080d10]/75 to-[#080d10]" />
 
             <section className="mx-auto flex min-h-[calc(100vh-8rem)] max-w-6xl flex-col items-center justify-center text-center">
                 <p className="mb-5 text-sm font-bold uppercase tracking-[0.26em] text-orange-400 sm:text-base">
