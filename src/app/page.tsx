@@ -1,9 +1,12 @@
 import Navbar from "@/components/layout/Navbar";
+import Header from "@/components/layout/Header";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+
+      <Header />
 
     <main className="min-h-screen p-8">
       <h1 className="text-4xl font-bold">Hunter Cardwell</h1>
