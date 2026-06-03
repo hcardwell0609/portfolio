@@ -191,7 +191,8 @@ export default function Navbar() {
                         <span className="hidden sm:block">
                             {item.name}
                         </span>
-                        <div className={`
+                        <div data-testid={`dot-${item.path}`} 
+                        className={`
                         h-[10px] 
                         w-[10px] 
                         rounded-full 
