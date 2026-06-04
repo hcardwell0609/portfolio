@@ -2,5 +2,12 @@ node_modules
 .next
 .git
 .env
+.env*
 npm-debug.log
 README.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+.vscode
+.idea
+*.log
