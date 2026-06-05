@@ -151,7 +151,16 @@ export default function Navbar() {
 
     return (
         <nav className="fixed z-[10000] w-full px-4">
-            <div className="mx-auto mt-[10px] flex w-fit max-w-full gap-5 rounded-full border border-white/20 bg-white/5 px-5 py-[10px] shadow-lg backdrop-blur-md sm:gap-[40px] sm:px-[30px]">
+            <div className="mx-auto mt-[10px] flex w-fit max-w-full items-center gap-5 rounded-full border border-white/20 bg-white/5 px-5 py-[10px] shadow-lg backdrop-blur-md sm:gap-[40px] sm:px-[30px]">
+                <div
+                    className="hidden items-center gap-6 pr-1 min-[520px]:flex sm:gap-8 sm:pr-2"
+                    aria-hidden="true"
+                >
+                    <div className="text-3xl font-bold leading-none tracking-normal text-white">
+                        H<span className="text-orange-400">C</span>
+                    </div>
+                    <div className="h-10 w-px bg-white/15" />
+                </div>
                 
                 {navItems.map((item) => {
 
