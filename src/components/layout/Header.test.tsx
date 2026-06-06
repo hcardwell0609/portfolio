@@ -1,6 +1,15 @@
-import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { fireEvent, render, screen } from "@testing-library/react";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import Header from "./Header";
+
+const scrollIntoViewMock = vi.fn();
+
+beforeEach(() => {
+
+    vi.clearAllMocks();
+    window.HTMLElement.prototype.scrollIntoView = scrollIntoViewMock;
+
+});
 
 describe("Header", () => {
 
@@ -22,14 +31,23 @@ describe("Header", () => {
 
     });
 
-    it("renders the view work link", () => {
+    it("scrolls to the experience section when view work is clicked", () => {
 
-        render(<Header />);
+        render(
+            <>
+                <Header />
+                <section id="experience">Experience Section</section>
+            </>
+        );
 
-        const link = screen.getByRole("link", { name: "View my work" });
+        const button = screen.getByRole("button", { name: "View my work" });
 
-        expect(link).toHaveAttribute("href", "#projects");
-        expect(link).toHaveTextContent("View My Work");
+        fireEvent.click(button);
+
+        expect(button).toHaveTextContent("View My Work");
+        expect(scrollIntoViewMock).toHaveBeenCalledWith({
+            behavior: "smooth"
+        });
 
     });
 

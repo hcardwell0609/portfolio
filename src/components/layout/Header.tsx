@@ -1,4 +1,16 @@
+"use client";
+
 export default function Header() {
+
+    const scrollToExperience = () => {
+
+        const element = document.querySelector("#experience");
+
+        element?.scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+
     return (
         <header
             id="home"
@@ -23,9 +35,10 @@ export default function Header() {
 
                 <div className="my-10 h-px w-28 bg-gradient-to-r from-transparent via-orange-400 to-transparent shadow-[0_0_18px_rgba(251,146,60,0.95)]" />
 
-                <a
-                    href="#projects"
-                    className="group inline-flex min-h-14 items-center gap-5 rounded-full border border-white/20 bg-white/5 px-8 text-lg font-semibold text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_18px_42px_rgba(0,0,0,0.18)] backdrop-blur-md transition duration-300 hover:border-orange-300/50 hover:bg-white/10 hover:text-white sm:min-h-16 sm:px-10 sm:text-xl"
+                <button
+                    type="button"
+                    onClick={scrollToExperience}
+                    className="group inline-flex min-h-14 items-center gap-5 rounded-full border border-white/20 bg-white/5 px-8 text-lg font-semibold text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_18px_42px_rgba(0,0,0,0.18)] backdrop-blur-md transition duration-300 hover:border-orange-300/50 hover:bg-white/10 hover:text-white hover:cursor-pointer sm:min-h-16 sm:px-10 sm:text-xl"
                     aria-label="View my work"
                 >
                     <span>View My Work</span>
@@ -42,7 +55,7 @@ export default function Header() {
                         <path d="M12 5v14" />
                         <path d="m19 12-7 7-7-7" />
                     </svg>
-                </a>
+                </button>
             </section>
         </header>
     )
