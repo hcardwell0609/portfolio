@@ -92,7 +92,7 @@ const fileTree = [
     { name: "Navbar.tsx", icon: "ts", depth: 3 },
     { name: "Header.tsx", icon: "ts", depth: 3 },
     { name: "AboutMe.tsx", icon: "ts", depth: 3 },
-    { name: "Experience.tsx", icon: "ts", depth: 3 },
+    { name: "Projects.tsx", icon: "ts", depth: 3 },
     { name: "BehindTheCode.tsx", icon: "ts", depth: 3 },
     { name: "data", icon: "folder", depth: 1 },
     { name: "projects.ts", icon: "ts", depth: 2 },
@@ -322,7 +322,7 @@ export default function BehindTheCode() {
                                         <code>{`1   import Navbar from '@/components/layout/Navbar'
 2   import Header from '@/components/layout/Header'
 3   import AboutMe from '@/components/layout/AboutMe'
-4   import Experience from '@/components/layout/Experience'
+4   import Projects from '@/components/layout/Projects'
 5   import BehindTheCode from '@/components/layout/BehindTheCode'
 6
 7   export default function Home() {
@@ -331,7 +331,7 @@ export default function BehindTheCode() {
 10              <Navbar />
 11              <Header />
 12              <AboutMe />
-13              <Experience />
+13              <Projects />
 14              <BehindTheCode />
 15          </>
 16

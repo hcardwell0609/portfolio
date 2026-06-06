@@ -2,9 +2,9 @@
 
 export default function Header() {
 
-    const scrollToExperience = () => {
+    const scrollToProjects = () => {
 
-        const element = document.querySelector("#experience");
+        const element = document.querySelector("#projects");
 
         element?.scrollIntoView({
             behavior: "smooth"
@@ -37,7 +37,7 @@ export default function Header() {
 
                 <button
                     type="button"
-                    onClick={scrollToExperience}
+                    onClick={scrollToProjects}
                     className="group inline-flex min-h-14 items-center gap-5 rounded-full border border-white/20 bg-white/5 px-8 text-lg font-semibold text-white/90 shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_18px_42px_rgba(0,0,0,0.18)] backdrop-blur-md transition duration-300 hover:border-orange-300/50 hover:bg-white/10 hover:text-white hover:cursor-pointer sm:min-h-16 sm:px-10 sm:text-xl"
                     aria-label="View my work"
                 >

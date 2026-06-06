@@ -31,12 +31,12 @@ describe("Header", () => {
 
     });
 
-    it("scrolls to the experience section when view work is clicked", () => {
+    it("scrolls to the projects section when view work is clicked", () => {
 
         render(
             <>
                 <Header />
-                <section id="experience">Experience Section</section>
+                <section id="projects">Projects Section</section>
             </>
         );
 

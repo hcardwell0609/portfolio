@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Header from "@/components/layout/Header";
 import AboutMe from "@/components/layout/AboutMe";
-import Experience from "@/components/layout/Experience";
+import Projects from "@/components/layout/Projects";
 import BehindTheCode from "@/components/layout/BehindTheCode";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 
       <AboutMe />
 
-      <Experience />
+      <Projects />
 
       <BehindTheCode />
     </>

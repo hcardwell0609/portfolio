@@ -41,7 +41,7 @@ function renderNavbarWithSections() {
             <Navbar />
             <section id="home">Home Section</section>
             <section id="about">About Section</section>
-            <section id="experience">Experience Section</section>
+            <section id="projects">Projects Section</section>
             <section id="code">Code Section</section>
         </>
     );
@@ -74,7 +74,7 @@ describe("Navbar", () => {
 
         expect(screen.getByRole("button", { name: "Home" })).toBeInTheDocument();
         expect(screen.getByRole("button", { name: "About" })).toBeInTheDocument();
-        expect(screen.getByRole("button", { name: "Experience" })).toBeInTheDocument();
+        expect(screen.getByRole("button", { name: "Projects" })).toBeInTheDocument();
         expect(screen.getByRole("button", { name: "Code" })).toBeInTheDocument();
 
     });
@@ -84,7 +84,7 @@ describe("Navbar", () => {
         renderNavbarWithSections();
         setSectionTop("home", 0);
         setSectionTop("about", 450);
-        setSectionTop("experience", 900);
+        setSectionTop("projects", 900);
         setSectionTop("code", 1350);
 
         fireEvent.scroll(window);
@@ -113,7 +113,7 @@ describe("Navbar", () => {
         renderNavbarWithSections();
         setSectionTop("home", 0);
         setSectionTop("about", 500);
-        setSectionTop("experience", 900);
+        setSectionTop("projects", 900);
         setSectionTop("code", 1300);
 
         fireEvent.scroll(window);
@@ -121,16 +121,16 @@ describe("Navbar", () => {
         expectActiveDot("#home");
 
         setSectionTop("about", 200);
-        setSectionTop("experience", 650);
+        setSectionTop("projects", 650);
         fireEvent.scroll(window);
 
         expectActiveDot("#about");
 
-        setSectionTop("experience", 150);
+        setSectionTop("projects", 150);
         setSectionTop("code", 700);
         fireEvent.scroll(window);
 
-        expectActiveDot("#experience");
+        expectActiveDot("#projects");
 
     });
 
@@ -139,14 +139,14 @@ describe("Navbar", () => {
         renderNavbarWithSections();
         setSectionTop("home", 0);
         setSectionTop("about", 200);
-        setSectionTop("experience", 800);
+        setSectionTop("projects", 800);
         setSectionTop("code", 1200);
 
         fireEvent.scroll(window);
         expectActiveDot("#about");
 
         setSectionTop("about", 500);
-        setSectionTop("experience", 900);
+        setSectionTop("projects", 900);
         setSectionTop("code", 1300);
         fireEvent.resize(window);
 
@@ -155,4 +155,3 @@ describe("Navbar", () => {
     });
 
 });
-

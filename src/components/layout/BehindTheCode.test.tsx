@@ -67,6 +67,7 @@ describe("BehindTheCode", () => {
         expect(screen.getAllByText("page.tsx")).toHaveLength(2);
         expect(screen.getByText(/import Navbar from/i)).toBeInTheDocument();
         expect(screen.getByText(/<BehindTheCode \/>/i)).toBeInTheDocument();
+        expect(screen.getByText(/import Projects from/i)).toBeInTheDocument();
 
     });
 

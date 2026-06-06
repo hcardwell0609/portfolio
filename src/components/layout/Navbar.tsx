@@ -43,8 +43,8 @@ const navItems = [
         )
     },
     {
-        name: "Experience",
-        path: "#experience",
+        name: "Projects",
+        path: "#projects",
         icon: (
             <svg
                 aria-hidden="true"
@@ -56,9 +56,10 @@ const navItems = [
                 strokeWidth="2"
                 viewBox="0 0 24 24"
             >
-                <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                <rect height="14" rx="2" width="20" x="2" y="6" />
-                <path d="M2 12h20" />
+                <path d="M4 7h16" />
+                <path d="M4 12h16" />
+                <path d="M4 17h16" />
+                <path d="M7 4v16" />
             </svg>
         )
     },
