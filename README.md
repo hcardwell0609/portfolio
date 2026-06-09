@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hunter Cardwell Portfolio
 
-## Getting Started
+A modern portfolio website showcasing my experience, technical skills, and full-stack development projects.
 
-First, run the development server:
+🌐 Live Site: https://huntercardwell.com
+
+## Overview
+
+This portfolio highlights my work as a Full Stack Developer, including production applications, SaaS platforms, and custom software solutions.
+
+The goal of this project was to create a clean, responsive, and performant website while following modern development practices.
+
+## Features
+
+- Responsive design optimized for desktop and mobile devices
+- Project showcase featuring real-world applications
+- Professional experience and skills overview
+- Contact and social links
+- SEO-friendly metadata
+- Modern UI with reusable components
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Frontend:** React
+- **Styling:** Tailwind CSS
+- **Testing:** Vitest
+- **Deployment:** Vercel
+
+## Featured Projects
+
+### Facility Nerds
+
+A production SaaS platform built for sports facilities to automate access control and facility management.
+
+Key features include:
+
+- Smart lock integrations
+- Automated customer access codes
+- Role-based permissions
+- Facility and lock management
+- Background job processing
+- Customer scheduling integrations
+
+## Development
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run tests:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## About Me
 
-## Learn More
+I am a Full Stack Developer focused on building scalable applications that solve real business problems.
 
-To learn more about Next.js, take a look at the following resources:
+My experience includes designing and developing SaaS platforms, automation tools, dashboards, and custom business applications using modern web technologies.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Website: https://huntercardwell.com
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+LinkedIn: https://www.linkedin.com/in/hunter-cardwell/
